@@ -23,5 +23,13 @@
     "node": ">=16.0.0"
   },
   "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@stomya/eslint-config": "workspace:^",
+    "@stomya/tsconfig": "workspace:^",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.3"
+  }
 }

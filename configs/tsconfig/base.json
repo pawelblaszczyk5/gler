@@ -8,6 +8,7 @@
     "jsxImportSource": "solid-js",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "noEmit": true
   }
 }
