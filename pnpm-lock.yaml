@@ -5,6 +5,7 @@ importers:
   .:
     specifiers:
       '@stomya/eslint-config': workspace:^
+      '@stomya/prettier-config': workspace:^
       '@stomya/tsconfig': workspace:^
       '@typescript-eslint/parser': ^5.28.0
       eslint: ^8.17.0
@@ -12,6 +13,7 @@ importers:
       typescript: ^4.7.3
     devDependencies:
       '@stomya/eslint-config': link:configs/eslint-config
+      '@stomya/prettier-config': link:configs/prettier-config
       '@stomya/tsconfig': link:configs/tsconfig
       '@typescript-eslint/parser': 5.28.0_ud6rd4xtew5bv4yhvkvu24pzm4
       eslint: 8.17.0
@@ -39,6 +41,9 @@ importers:
       eslint-plugin-prettier: 4.0.0_ttcikbw5yztdadzhevg6ml5cuy
       eslint-plugin-react: 7.28.0
       eslint-plugin-solid: 0.7.0
+
+  configs/prettier-config:
+    specifiers: {}
 
   configs/tsconfig:
     specifiers:

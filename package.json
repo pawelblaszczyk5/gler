@@ -27,6 +27,7 @@
   "devDependencies": {
     "@stomya/eslint-config": "workspace:^",
     "@stomya/tsconfig": "workspace:^",
+    "@stomya/prettier-config": "workspace:^",
     "@typescript-eslint/parser": "^5.28.0",
     "eslint": "^8.17.0",
     "prettier": "^2.7.1",

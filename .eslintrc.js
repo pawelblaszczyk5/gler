@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: "@stomya/eslint-config",
+  extends: '@stomya/eslint-config',
 };
