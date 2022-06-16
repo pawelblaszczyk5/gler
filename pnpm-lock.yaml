@@ -1,0 +1,18 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers: {}
+
+  configs/tsconfig:
+    specifiers:
+      '@tsconfig/strictest': ^1.0.1
+    dependencies:
+      '@tsconfig/strictest': 1.0.1
+
+packages:
+
+  /@tsconfig/strictest/1.0.1:
+    resolution: {integrity: sha512-7O8Q537UQdTZSKEV0f5WRLRFtfL9B8agGqIZrCOwOiWvbjZWPP2rAoZ7LHcwjdG4vnjdleHMEE+ZetM+lhRkcA==}
+    dev: false
