@@ -1,0 +1,18 @@
+{
+  "name": "stomya",
+  "version": "0.0.1",
+  "description": "Stomya is",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "solidjs",
+    "solid",
+    "headless",
+    "components",
+    "ui"
+  ],
+  "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
+  "license": "MIT"
+}
