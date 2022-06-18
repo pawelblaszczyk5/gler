@@ -1,15 +1,8 @@
 {
   "name": "stomya",
   "version": "0.0.1",
-  "description": "Stomya is",
   "private": "true",
-  "scripts": {
-    "setup-hooks": "husky install"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "description": "Stomya is",
   "keywords": [
     "solidjs",
     "solid",
@@ -17,17 +10,29 @@
     "components",
     "ui"
   ],
-  "engines": {
-    "npm": ">=8.0.0",
-    "node": ">=16.0.0"
+  "license": "MIT",
+  "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "setup-hooks": "husky install"
+  },
+  "lint-staged": {
+    "*.{md,json,html}": [
+      "prettier --write"
+    ],
+    "*.{ts?(x),js}": [
+      "eslint --fix --max-warnings 0"
+    ],
+    "package.json": "sort-package-json"
   },
   "config": {
     "commitizen": {
       "path": "@commitlint/cz-commitlint"
     }
   },
-  "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
-  "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
@@ -46,7 +51,13 @@
     "eslint-plugin-solid": "^0.7.0",
     "husky": "^8.0.1",
     "inquirer": "^8.2.4",
+    "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
+    "sort-package-json": "^1.57.0",
     "typescript": "^4.7.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
   }
 }
