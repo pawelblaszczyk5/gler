@@ -4,7 +4,6 @@
   "description": "Stomya is",
   "private": "true",
   "scripts": {
-    "commit": "git-cz",
     "setup-hooks": "husky install"
   },
   "workspaces": [
