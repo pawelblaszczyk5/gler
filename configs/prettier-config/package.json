@@ -1,7 +1,0 @@
-{
-  "name": "@stomya/prettier-config",
-  "version": "0.0.0",
-  "main": "index.js",
-  "private": "true",
-  "license": "MIT"
-}

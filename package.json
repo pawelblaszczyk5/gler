@@ -8,8 +8,7 @@
   },
   "workspaces": [
     "apps/*",
-    "packages/*",
-    "configs/*"
+    "packages/*"
   ],
   "keywords": [
     "solidjs",
@@ -25,22 +24,18 @@
   "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
   "license": "MIT",
   "devDependencies": {
-    "@stomya/eslint-config": "workspace:^",
-    "@stomya/tsconfig": "workspace:^",
-    "@stomya/prettier-config": "workspace:^",
+    "@tsconfig/strictest": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
     "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "7.28.0",
+    "eslint-plugin-solid": "^0.7.0",
     "prettier": "^2.7.1",
     "typescript": "^4.7.3"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "@typescript-eslint/parser",
-        "prettier",
-        "typescript",
-        "eslint"
-      ]
-    }
   }
 }

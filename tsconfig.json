@@ -1,4 +1,15 @@
 {
-  "extends": "@stomya/tsconfig/base.json",
-  "exclude": ["node_modules"]
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noEmit": true
+  }
 }
