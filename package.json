@@ -4,7 +4,8 @@
   "description": "Stomya is",
   "private": "true",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "setup-hooks": "husky install"
   },
   "workspaces": [
     "apps/*",
@@ -21,12 +22,21 @@
     "npm": ">=8.0.0",
     "node": ">=16.0.0"
   },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
   "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "@commitlint/cz-commitlint": "^17.0.0",
     "@tsconfig/strictest": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
+    "commitizen": "^4.2.4",
     "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.7.1",
@@ -35,6 +45,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-solid": "^0.7.0",
+    "husky": "^8.0.1",
+    "inquirer": "^8.2.4",
     "prettier": "^2.7.1",
     "typescript": "^4.7.3"
   }
