@@ -1,0 +1,53 @@
+{
+  "name": "@gler/template",
+  "version": "0.0.0",
+  "private": false,
+  "description": "Template",
+  "keywords": [
+    "solid",
+    "headless",
+    "design",
+    "system",
+    "components"
+  ],
+  "homepage": "https://github.com/pawelblaszczyk5/gler/tree/main/template#readme",
+  "bugs": {
+    "url": "https://github.com/pawelblaszczyk5/gler/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawelblaszczyk5/gler.git"
+  },
+  "license": "MIT",
+  "author": "Paweł Błaszczyk <pawelblaszczyk@wir.pl>",
+  "contributors": [],
+  "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "solid": "./dist/source/index.jsx",
+      "import": "./dist/esm/index.js",
+      "browser": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "node": "./dist/cjs/index.js"
+    }
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "vite",
+    "test": "npm-run-all --parallel test:*",
+    "test:unit": "vitest"
+  },
+  "devDependencies": {
+    "solid-js": "^1.4.4"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.4.4"
+  }
+}
