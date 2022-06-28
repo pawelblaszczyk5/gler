@@ -17,7 +17,8 @@
     "packages/*"
   ],
   "scripts": {
-    "setup-hooks": "husky install"
+    "husky": "husky install",
+    "cz": "cz"
   },
   "lint-staged": {
     "*.{md,json,html}": [
