@@ -11,6 +11,7 @@ export const viteConfig = defineConfig({
   define: {
     'import.meta.vitest': 'undefined',
   },
+  root: process.env['VITEST'] === 'true' ? 'src' : 'dev',
   test: {
     passWithNoTests: true,
     root: 'src',
