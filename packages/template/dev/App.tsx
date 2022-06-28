@@ -1,7 +1,7 @@
 import { createGreeting } from '../src';
 
 export const App = () => {
-  const getHelloWorld = createGreeting('world');
+	const getHelloWorld = createGreeting('world');
 
-  return <h1>{getHelloWorld()}</h1>;
+	return <h1>{getHelloWorld()}</h1>;
 };

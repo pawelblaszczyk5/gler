@@ -1,16 +1,16 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
-  "exclude": ["node_modules"],
-  "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "jsxImportSource": "solid-js",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "sourceMap": true,
-    "noEmit": true,
-    "types": ["vitest/importMeta"]
-  }
+	"extends": "@tsconfig/strictest/tsconfig.json",
+	"exclude": ["node_modules"],
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"jsxImportSource": "solid-js",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"sourceMap": true,
+		"noEmit": true,
+		"types": ["vitest/importMeta"]
+	}
 }
