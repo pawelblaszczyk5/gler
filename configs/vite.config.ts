@@ -15,5 +15,11 @@ export const viteConfig = defineConfig({
     passWithNoTests: true,
     root: 'src',
     includeSource: ['**/*.{tsx,ts}'],
+    transformMode: {
+      web: [/.[jt]sx?/],
+    },
+    deps: {
+      inline: [/solid-js/],
+    },
   },
 });
