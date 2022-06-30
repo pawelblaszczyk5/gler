@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 
-export const viteConfig = defineConfig({
+export const sharedConfigWithPlaywright = {
 	plugins: [solidPlugin()],
 	build: {
 		target: 'esnext',
@@ -11,6 +11,10 @@ export const viteConfig = defineConfig({
 	define: {
 		'import.meta.vitest': 'undefined',
 	},
+};
+
+export const viteConfig = defineConfig({
+	...sharedConfigWithPlaywright,
 	root: process.env['VITEST'] === 'true' ? 'src' : 'dev',
 	test: {
 		passWithNoTests: true,
