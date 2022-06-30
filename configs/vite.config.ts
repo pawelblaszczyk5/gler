@@ -15,6 +15,7 @@ export const viteConfig = defineConfig({
 	test: {
 		passWithNoTests: true,
 		root: 'src',
+		include: [],
 		includeSource: ['**/*.{tsx,ts}'],
 		transformMode: {
 			web: [/.[jt]sx?/],
