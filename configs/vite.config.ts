@@ -23,5 +23,6 @@ export const viteConfig = defineConfig({
 		deps: {
 			inline: [/solid-js/],
 		},
+		watch: false,
 	},
 });
