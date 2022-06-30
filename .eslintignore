@@ -1,4 +1,5 @@
 node_modules/
+template/ 
 
 /.eslintrc.js
 /commitlintrc.js
