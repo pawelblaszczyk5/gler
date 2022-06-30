@@ -4,8 +4,7 @@ import { devices } from '@playwright/test';
 import { sharedConfigWithPlaywright } from './vite.config.js';
 
 export const playwrightConfig: PlaywrightTestConfig = {
-	forbidOnly: !!process.env['CI'],
-	retries: process.env['CI'] ? 2 : 0,
+	forbidOnly: Boolean(process.env['CI']),
 	use: {
 		trace: 'on-first-retry',
 		ctViteConfig: sharedConfigWithPlaywright,
