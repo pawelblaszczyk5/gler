@@ -7,6 +7,7 @@ importers:
       '@commitlint/cli': ^17.0.2
       '@commitlint/config-conventional': ^17.0.2
       '@commitlint/cz-commitlint': ^17.0.0
+      '@playwright/test': ^1.23.0
       '@rollup/plugin-replace': ^4.0.0
       '@tsconfig/strictest': ^1.0.1
       '@typescript-eslint/eslint-plugin': ^5.28.0
@@ -24,6 +25,7 @@ importers:
       inquirer: ^8.2.4
       lint-staged: ^13.0.2
       npm-run-all: ^4.1.5
+      playwright-ct-solidjs: ^1.22.3
       prettier: ^2.7.1
       rollup: ^2.75.7
       rollup-preset-solid: ^1.4.0
@@ -36,6 +38,7 @@ importers:
       '@commitlint/cli': 17.0.2
       '@commitlint/config-conventional': 17.0.2
       '@commitlint/cz-commitlint': 17.0.0_nlwf7yf5555jiq2ch63nbqq5xy
+      '@playwright/test': 1.23.0
       '@rollup/plugin-replace': 4.0.0_rollup@2.75.7
       '@tsconfig/strictest': 1.0.1
       '@typescript-eslint/eslint-plugin': 5.28.0_7yumg2qjgbp7maccqlfhx2vudu
@@ -53,6 +56,7 @@ importers:
       inquirer: 8.2.4
       lint-staged: 13.0.2
       npm-run-all: 4.1.5
+      playwright-ct-solidjs: 1.22.3
       prettier: 2.7.1
       rollup: 2.75.7
       rollup-preset-solid: 1.4.0
@@ -1554,6 +1558,15 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
+    dev: true
+
+  /@playwright/test/1.23.0:
+    resolution: {integrity: sha512-RPWI8AHBVBiDyfTuxi1BhOaY3yaVy3S5ZsGKkSGGeWpZtSgN4SerInCYvgh9+EunIAK4RJQo+bzupbAn5pVqHQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@types/node': 18.0.0
+      playwright-core: 1.23.0
     dev: true
 
   /@rollup/plugin-babel/5.3.1_za5spbk65gc2bmrclluhieacz4:
@@ -4656,6 +4669,26 @@ packages:
   /pify/3.0.0:
     resolution: {integrity: sha512-C3FsVNH1udSEX48gGX1xfvwTWfsYWj5U+8/uK15BGzIGrKoUpghX8hWZwa/OFnakBiiVNmBvemTJR5mcy7iPcg==}
     engines: {node: '>=4'}
+    dev: true
+
+  /playwright-core/1.23.0:
+    resolution: {integrity: sha512-Zzhyr5RZGoJ1ek2sgfJCt2076kdOg8hnNwFBqAYeLySiutXyxSQk93vZ5gbnFiWV1sHvueCcwla9n35acUTxtA==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /playwright-ct-solidjs/1.22.3:
+    resolution: {integrity: sha512-YF6njsIbkNAiIRtL3cfjfCmxtZZQfLQpi802bwiKeO4Tac6H5S0A/Gi8x7Ol49ogn0Wn/I8I/B0nq2s6Hbk/Lw==}
+    engines: {node: '>=14'}
+    dependencies:
+      '@playwright/test': 1.23.0
+      vite: 2.9.12
+      vite-plugin-solid: 2.2.6
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+      - supports-color
     dev: true
 
   /postcss/8.4.14:

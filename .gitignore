@@ -5,6 +5,7 @@ node_modules
 
 #output
 dist
+.cache
 
 # testing
 coverage

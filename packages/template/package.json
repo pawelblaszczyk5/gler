@@ -42,7 +42,8 @@
 		"build": "rollup -c",
 		"dev": "vite",
 		"test": "npm-run-all --parallel test:*",
-		"test:unit": "vitest"
+		"test:vitest": "vitest",
+		"test:playwright": "playwright test"
 	},
 	"devDependencies": {
 		"solid-js": "^1.4.4"
