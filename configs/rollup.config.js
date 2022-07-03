@@ -7,6 +7,7 @@ export const rollupConfig = withSolid({
 	plugins: [
 		replace({
 			'import.meta.vitest': 'undefined',
+			preventAssignment: true,
 		}),
 	],
 });
