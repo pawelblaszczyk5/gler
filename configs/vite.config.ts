@@ -1,9 +1,18 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
+import checker from 'vite-plugin-checker';
+
+console.log(process.cwd());
 
 export const sharedConfigWithPlaywright = {
-	plugins: [solidPlugin()],
+	plugins: [
+		solidPlugin(),
+		checker({
+			typescript: { tsconfigPath: '../../tsconfig.json' },
+			eslint: { lintCommand: 'eslint "../**/*.{ts,tsx}"' },
+		}),
+	],
 	build: {
 		target: 'esnext',
 		polyfillDynamicImport: false,
