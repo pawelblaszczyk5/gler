@@ -1,6 +1,6 @@
 {
 	"extends": "@tsconfig/strictest/tsconfig.json",
-	"exclude": ["node_modules"],
+	"exclude": ["node_modules", "template"],
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "ESNext",
