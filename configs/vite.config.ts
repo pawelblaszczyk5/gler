@@ -2,8 +2,7 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
 import checker from 'vite-plugin-checker';
-
-console.log(process.cwd());
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 export const sharedConfigWithPlaywright = {
 	plugins: [
@@ -12,6 +11,7 @@ export const sharedConfigWithPlaywright = {
 			typescript: { tsconfigPath: '../../tsconfig.json' },
 			eslint: { lintCommand: 'eslint "../**/*.{ts,tsx}"' },
 		}),
+		vanillaExtractPlugin(),
 	],
 	build: {
 		target: 'esnext',
