@@ -20,7 +20,7 @@
 	"scripts": {
 		"husky": "husky install",
 		"cz": "cz",
-		"plop": "plop"
+		"generate": "plop"
 	},
 	"lint-staged": {
 		"*.{md,json,html}": [
