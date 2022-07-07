@@ -28,7 +28,6 @@ module.exports = {
 				html: true,
 			},
 		],
-		'solid/no-destructure': 'off',
 		'newline-after-var': 2,
 		'@typescript-eslint/consistent-type-imports': 2,
 		'no-restricted-syntax': [
@@ -50,4 +49,12 @@ module.exports = {
 			},
 		},
 	},
+	overrides: [
+		{
+			files: ['**/*.test.tsx'],
+			rules: {
+				'solid/no-destructure': 'off',
+			},
+		},
+	],
 };
